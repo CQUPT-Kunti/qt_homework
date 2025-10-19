@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Chat Room UI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="topLayout">
+      <item>
+       <widget class="QLineEdit" name="hostEdit">
+        <property name="placeholderText"><string>Host</string></property>
+        <property name="text"><string>127.0.0.1</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="portEdit">
+        <property name="placeholderText"><string>Port</string></property>
+        <property name="text"><string>12345</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="connectButton">
+        <property name="text"><string>Connect</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="chatList"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="bottomLayout">
+      <item>
+       <widget class="QLineEdit" name="messageEdit">
+        <property name="placeholderText"><string>Type a message...</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sendButton">
+        <property name="text"><string>Send</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
