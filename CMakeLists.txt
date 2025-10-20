@@ -15,6 +15,7 @@ set(PROJECT_SOURCES
     main.cpp
     mainwindow.cpp
     mainwindow.h
+    protocol.h
     mainwindow.ui
 )
 
@@ -23,6 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         .gitignore
+        protocol.h
     )
 else()
     if(ANDROID)

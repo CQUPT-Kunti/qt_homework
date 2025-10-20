@@ -3,27 +3,31 @@
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="windowTitle">
-   <string>Chat Room UI</string>
+   <string>聊天客户端</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="topLayout">
+     <layout class="QHBoxLayout" name="hostLayout">
       <item>
        <widget class="QLineEdit" name="hostEdit">
-        <property name="placeholderText"><string>Host</string></property>
-        <property name="text"><string>127.0.0.1</string></property>
+        <property name="placeholderText">
+         <string>Host</string>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QLineEdit" name="portEdit">
-        <property name="placeholderText"><string>Port</string></property>
-        <property name="text"><string>12345</string></property>
+        <property name="placeholderText">
+         <string>Port</string>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="connectButton">
-        <property name="text"><string>Connect</string></property>
+        <property name="text">
+         <string>连接</string>
+        </property>
        </widget>
       </item>
      </layout>
@@ -32,15 +36,27 @@
      <widget class="QListWidget" name="chatList"/>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="bottomLayout">
+     <layout class="QHBoxLayout" name="inputLayout">
+      <item>
+       <widget class="QComboBox" name="sendTypeComboBox">
+        <item><property name="text"><string>Text</string></property></item>
+        <item><property name="text"><string>Image</string></property></item>
+        <item><property name="text"><string>File</string></property></item>
+        <item><property name="text"><string>Screen</string></property></item>
+       </widget>
+      </item>
       <item>
        <widget class="QLineEdit" name="messageEdit">
-        <property name="placeholderText"><string>Type a message...</string></property>
+        <property name="placeholderText">
+         <string>输入消息...</string>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="sendButton">
-        <property name="text"><string>Send</string></property>
+        <property name="text">
+         <string>发送</string>
+        </property>
        </widget>
       </item>
      </layout>
